@@ -1,0 +1,24 @@
+public class Mahasiswa {
+    int NIM;
+    String nama;
+    char kelas;
+    
+    // Konstruktor
+    public Mahasiswa(int NIM, String nama, char kelas) {
+        this.NIM = NIM;
+        this.nama = nama;
+        this.kelas = kelas;
+    }
+    
+    // Metode untuk menampilkan informasi mahasiswa
+    public void displayInfo() {
+        System.out.println("NIM: " + NIM);
+        System.out.println("Nama: " + nama);
+        System.out.println("Kelas: " + kelas);
+    }
+    
+    public static void main(String[] args) {
+        Mahasiswa mhs1 = new Mahasiswa(23533797, "Ahmad", 'C');
+        mhs1.displayInfo();
+    }
+}
